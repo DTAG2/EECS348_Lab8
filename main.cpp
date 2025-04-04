@@ -164,6 +164,7 @@ int main() {
     mult_mat(matrix1, matrix2);
     
     // Diagonal sum of first matrix
+    std::cout <<"For matrix 1\n";
     diag_sum(matrix1);
 
     // Swap rows
