@@ -64,7 +64,7 @@ void AddMatrices(const Matrix &A, const Matrix &B) {
         for (int j = 0; j < N; ++j) //looping over both matrix's columns
             added_matrix[i][j] = A[i][j] + B[i][j]; //add the values from both matrices
 
-    std::cout << "Added Matrix (Matrix1 + Matrix2):\n"; //print the added matrices
+    std::cout << "Added Matrix (Matrix1 + Matrix2):\n"; //print the added matrix
     PrintMatrix(added_matrix);
 }
 
@@ -88,7 +88,7 @@ void mult_mat(const Matrix &A, const Matrix &B) {
 //4. Get the sum of matrix diagonal elements:
 void diag_sum(const Matrix &mat) {
     int N = mat.size(); //get the size of the matrix (NxN)
-    int sum = 0; //initialize sum inteeger variable
+    int sum = 0; //initialize sum integer variable
     for (int i = 0; i < N; ++i) { //loop over the rows in the matrix
         sum += mat[i][i]; // main diagonal
         sum += mat[i][N - i - 1]; // secondary diagonal
@@ -135,7 +135,7 @@ void upd_mat_elm(Matrix &mat, int row, int col, int newValue) {
         std::cerr << "Index out of bounds.\n";
         return;
     }
-    mat[row][col] = newValue; //changes the value in the specified indices with the newValue
+    mat[row][col] = newValue; //changes the value in the specified position with the newValue
 
     std::cout << "Updated matrix:\n"; //print updated matrix
     PrintMatrix(mat);
